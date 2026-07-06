@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZeroPoint — Legal</title>
+<style>
+:root {
+  --zero-black: #02040a;
+  --zero-surface: #080d16;
+  --zero-surface-high: #101827;
+  --zero-white: #f5faff;
+  --zero-muted: #94a3b8;
+  --neon-blue: #38bdf8;
+  --neon-cyan: #67e8f9;
+  --neon-green: #39ff88;
+  --zero-gold: #ffd166;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 50% -100px, #0a1626 0%, var(--zero-black) 60%);
+  color: var(--zero-white);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+header.site {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 22px rgba(103, 232, 249, 0.55);
+}
+
+.logo small {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 6px;
+  color: var(--zero-muted);
+  margin-top: 4px;
+}
+
+h1.page-title {
+  font-size: 26px;
+  font-weight: 900;
+  margin: 18px 0 6px;
+}
+
+.effective {
+  color: var(--zero-muted);
+  font-size: 13px;
+}
+
+nav.langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 26px 0 30px;
+}
+
+nav.langs button {
+  background: var(--zero-surface);
+  color: var(--zero-white);
+  border: 1px solid rgba(103, 232, 249, 0.25);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+nav.langs button:hover {
+  border-color: var(--neon-cyan);
+  transform: translateY(-1px);
+}
+
+nav.langs button.active {
+  background: var(--neon-cyan);
+  color: var(--zero-black);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 18px rgba(103, 232, 249, 0.45);
+}
+
+section.doc {
+  display: none;
+  background: rgba(8, 13, 22, 0.92);
+  border: 1px solid rgba(103, 232, 249, 0.18);
+  border-radius: 22px;
+  padding: 34px 30px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+  animation: fadeIn 0.35s ease;
+}
+
+section.doc.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+section.doc h2 {
+  color: var(--neon-cyan);
+  font-size: 21px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+section.doc h3 {
+  color: var(--neon-green);
+  font-size: 16px;
+  font-weight: 800;
+  margin: 24px 0 8px;
+}
+
+section.doc p, section.doc li {
+  color: rgba(245, 250, 255, 0.88);
+  font-size: 15px;
+}
+
+section.doc ul {
+  padding-inline-start: 22px;
+  margin: 6px 0;
+}
+
+section.doc a {
+  color: var(--neon-blue);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(56, 189, 248, 0.6);
+}
+
+section.doc a:hover {
+  color: var(--neon-cyan);
+}
+
+.contact-box {
+  margin-top: 26px;
+  background: var(--zero-surface-high);
+  border: 1px solid rgba(255, 209, 102, 0.4);
+  border-radius: 16px;
+  padding: 16px 20px;
+}
+
+.contact-box strong {
+  color: var(--zero-gold);
+}
+
+footer.site {
+  text-align: center;
+  color: var(--zero-muted);
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+footer.site a {
+  color: var(--neon-cyan);
+  text-decoration: none;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 460px;
+  margin: 30px auto 0;
+}
+
+.home-links a.card-link {
+  display: block;
+  text-align: center;
+  background: var(--zero-surface);
+  border: 1px solid rgba(103, 232, 249, 0.3);
+  border-radius: 18px;
+  padding: 22px;
+  color: var(--zero-white);
+  font-size: 17px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.home-links a.card-link:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 26px rgba(103, 232, 249, 0.35);
+  transform: translateY(-2px);
+}
+
+.home-links a.card-link span {
+  display: block;
+  color: var(--zero-muted);
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="site">
+    <div class="logo">.000<small>ZEROPOINT</small></div>
+    <h1 class="page-title">Legal Documents</h1>
+    <p class="effective">ZeroPoint — a precision timing game by Erdem Kartal</p>
+  </header>
+
+  <div class="home-links">
+    <a class="card-link" href="privacy-policy.html">
+      Privacy Policy
+      <span>Gizlilik Politikası · Политика конфиденциальности · Política de Privacidad · プライバシーポリシー · 隐私政策 · سياسة الخصوصية · Siyaseta Nepenîtiyê</span>
+    </a>
+    <a class="card-link" href="terms.html">
+      User Agreement (Terms of Use)
+      <span>Kullanıcı Sözleşmesi · Пользовательское соглашение · Acuerdo de Usuario · 利用規約 · 用户协议 · اتفاقية المستخدم · Peymana Bikarhêner</span>
+    </a>
+  </div>
+
+  <footer class="site">
+    <p>© 2026 Erdem Kartal · <a href="mailto:44kartalerdem44@gmail.com">44kartalerdem44@gmail.com</a></p>
+  </footer>
+</div>
+</body>
+</html>
